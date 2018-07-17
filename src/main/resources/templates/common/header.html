@@ -1,0 +1,37 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <div th:fragment="header-css">
+        <link rel="stylesheet" th:href="@{/css/main.css}" href="../css/main.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </div>
+</head>
+<body>
+    <div th:fragment="header">
+        <div class="container">
+            <nav class="navbar navbar-expand navbar-light bg-light">
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                        <a class="nav-link active" href="/home">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                        <a class="nav-link" href="/admin/index">Admin</a>
+                        </li>
+                        <li class="nav-item active">
+                        <a class="nav-link" href="/user/index">User</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="btn btn-sm btn-outline-secondary" href="/logout">Sign Out</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>

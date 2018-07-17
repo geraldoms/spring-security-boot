@@ -1,0 +1,11 @@
+DELETE FROM USERS_ROLES;
+DELETE FROM USERS;
+DELETE FROM ROLES;
+
+INSERT INTO ROLES VALUES (1, 'ADMIN'), (2, 'USER');
+
+INSERT INTO USERS VALUES (1, 'richard@gmail.com', '$2a$10$mS/lrCxtcVq3ACt4G77I9eD2sSCe1qLncFBjwREemT32uFh1zdm7u'),
+(2, 'jackson@gmail.com', '$2a$10$UazM8pUvf2n65N0g7u2P7.Yux0xs7V7H5INaQS/2XE91EMEhzb4HG'),
+(3, 'eva@gmail.com', '$2a$10$wWgYsIRigoMFjcd3R/ljP.pV88ApKHMCyW/AmdTXgrFtyLaaFOwNG');
+
+INSERT INTO USERS_ROLES VALUES (1,1),(2,2),(3,2);

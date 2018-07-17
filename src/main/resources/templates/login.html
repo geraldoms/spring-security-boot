@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Security Example</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}" href="../css/main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="jumbotron v-center">
+        <div class="container" style="max-width: 720px; text-align: center;">
+            <div class="row justify-content-center">
+                <form th:action="@{/login}" method="post" class="col-8">
+                    <fieldset>
+                        <h3>Enter Your Sign-In Info</h3>
+                        <div th:if="${param.error}">
+                            <div class="alert alert-danger">Invalid username or password.</div>
+                        </div>
+                        <div th:if="${param.logout}">
+                            <div class="alert alert-info">You have been logged out.</div>
+                        </div>
+                        <input type="text" id="email" name="email" th:placeholder="Email" class="form-control" autofocus="autofocus"/> <br/>
+                        <input type="password" th:placeholder="Password" id="password" name="password" class="form-control"/> <br/>
+                        <button class="btn btn-lg btn-primary btn-block" name="Submit" value="Login" type="Submit"
+                                th:text="Login"></button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
