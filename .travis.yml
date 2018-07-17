@@ -14,3 +14,4 @@ cache:
 
 after_success:
  - mvn clean
+ 
