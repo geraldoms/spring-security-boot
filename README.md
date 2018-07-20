@@ -6,10 +6,8 @@ This is a basic example of web application using Spring Security.
 The authentication and authorization are provided by Spring Security 5. The users 
 are stored in the H2 (in-memory) database. For the pages the Thymeleaf and Bootstrap were used.
 The database schema is basically a ManyToMany relationship between User and Role table.
-   
 
 ## Requirements
-* MySQL 5.6 or later
 * JDK 8 or later
 * Maven 3.2+
 
