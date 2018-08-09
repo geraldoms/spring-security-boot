@@ -28,11 +28,12 @@ For the unit and integration test, run the command below:
 
 ## Usage example 
 
-When the application starts to run, you can access it at `http://localhost:8080/home`. 
-Since you are not authenticated the first time you access it, it will redirect you to the 'http://localhost:8080/login', as shown in the image below.
+When the application starts you can access it at `http://localhost:8080/home`. 
+Since you are not authenticated, in the first time, it will redirect you to the login page in 'http://localhost:8080/login', as shown in the gif below.
 
 For this example, I'm using a common user with a USER role. This user can access the User Page, 
 but cannot access the Admin Page (which requires the ADMIN role). All authenticated users can access the Home Page.  
 
-![spring-security-boot-app](https://user-images.githubusercontent.com/13106549/42894535-133eef74-8a85-11e8-992e-5c9a594d69de.gif)
+![spring-security-boot-app](https://user-images.githubusercontent.com/13106549/43911130-a4018230-9bcc-11e8-9116-d6fc7d5261a9.gif)
+
 
